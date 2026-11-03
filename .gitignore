@@ -1,0 +1,14 @@
+
+# Python-miljøet, som hver person lager selv
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Andres kode og modellvekter (store filer, ikke vår kode)
+external/
+checkpoint/
+*.pth
+
+# Data og mellomresultater
+data/
+*.npy
