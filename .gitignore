@@ -12,3 +12,5 @@ checkpoint/
 # Data og mellomresultater
 data/
 *.npy
+/notes
+/project description
