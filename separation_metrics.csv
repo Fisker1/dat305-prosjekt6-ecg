@@ -1,0 +1,4 @@
+method,knn_agreement,silhouette_score
+Original,0.5359,-0.031847086
+PCA,0.34575,-0.050298132
+UMAP,0.5125,-0.042249504
