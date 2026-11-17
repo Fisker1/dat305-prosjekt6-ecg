@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+wfdb
+torch
+scikit-learn
+umap-learn
+scipy
