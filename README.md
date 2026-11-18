@@ -11,7 +11,7 @@ med PCA, UMAP, k-NN-enighet, silhouette og en matrise over hvilke diagnoser som 
 | Steg | Fil | Hva den gjør | Resultat |
 |---|---|---|---|
 | 1 | `1_utvalg.ipynb` | Velger EKG med én diagnose, minst 50 % sikkerhet, ett per pasient, ca. 100 per klasse | `utvalg.csv` (1292 EKG, 13 klasser) |
-| 2 | `2_embeddings.py` | Henter EKG-ene fra PhysioNet og kjører dem gjennom ECGFounder | `data/embeddings.npy` (1292 × 1024) |
+| 2 | `2_embeddings.ipynb` | Henter EKG-ene fra PhysioNet og kjører dem gjennom ECGFounder | `data/embeddings.npy` (1292 × 1024) |
 | 3 | `3_analyse.ipynb` | PCA, UMAP, k-NN, silhouette, naboblanding og sammenligning av metodene | Plott og tall til rapporten |
 
 `utvalg.csv` ligger i repoet, så du kan starte på steg 2.
@@ -28,7 +28,7 @@ Last ned vektene til modellen (370 MB) fra
 https://huggingface.co/PKUDigitalHealth/ECGFounder og legg filen her:
 `checkpoint/12_lead_ECGFounder.pth`.
 
-Kjør steg 2 fra rotmappen: `python 2_embeddings.py`. Første gang tar det omtrent en halvtime,
+Steg 2: åpne `2_embeddings.ipynb` og kjør alle cellene. Første gang tar det omtrent en halvtime,
 fordi hvert EKG hentes fra PhysioNet. Kopiene lagres i `data/signaler/`, så neste gang går det raskt.
 
 ## Mapper
