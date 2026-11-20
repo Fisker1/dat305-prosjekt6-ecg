@@ -2,7 +2,7 @@
 
 Gruppe 27: Anders, Øystein og Håvard.
 
-Vi kjører 1292 EKG fra PTB-XL gjennom den ferdigtrente EKG-modellen ECGFounder og får
+Vi kjører 1291 EKG fra PTB-XL gjennom den ferdigtrente EKG-modellen ECGFounder og får
 1024 tall (en embedding) per EKG. Så undersøker vi hvilke diagnoser modellen blander sammen,
 med PCA, UMAP, k-NN-enighet, silhouette og en matrise over hvilke diagnoser som er naboer.
 
@@ -10,8 +10,8 @@ med PCA, UMAP, k-NN-enighet, silhouette og en matrise over hvilke diagnoser som 
 
 | Steg | Fil | Hva den gjør | Resultat |
 |---|---|---|---|
-| 1 | `1_utvalg.ipynb` | Velger EKG med én diagnose, minst 50 % sikkerhet, ett per pasient, ca. 100 per klasse | `utvalg.csv` (1292 EKG, 13 klasser) |
-| 2 | `2_embeddings.ipynb` | Henter EKG-ene fra PhysioNet og kjører dem gjennom ECGFounder | `data/embeddings.npy` (1292 × 1024) |
+| 1 | `1_utvalg.ipynb` | Velger EKG med én diagnose, minst 50 % sikkerhet, ett per pasient, ca. 100 per klasse | `utvalg.csv` (1291 EKG, 13 klasser) |
+| 2 | `2_embeddings.ipynb` | Henter EKG-ene fra PhysioNet og kjører dem gjennom ECGFounder | `data/embeddings.npy` (1291 × 1024) |
 | 3 | `3_analyse.ipynb` | PCA, UMAP, k-NN, silhouette, naboblanding og sammenligning av metodene | Plott og tall til rapporten |
 
 `utvalg.csv` ligger i repoet, så du kan starte på steg 2.
