@@ -9,10 +9,6 @@ external/
 checkpoint/
 *.pth
 
-# Lokale instruksjonsfiler for AI-assistenter
-CLAUDE.md
-COPILOT.md
-
 # Data og mellomresultater
 data/
 *.npy
