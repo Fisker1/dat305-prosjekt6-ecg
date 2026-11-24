@@ -42,7 +42,7 @@ X_pca = pca.fit_transform(Z)
 
 reducer = umap.UMAP(
     n_components=2,
-    n_neighbors=30,
+    n_neighbors=15,
     min_dist=0.1,
     random_state=42
 )
